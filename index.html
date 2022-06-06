@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolo del prezzo del biglietto del treno</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <!-- GENERATORE DEL TICKET -->
+            <div class="am-row">
+                <!-- Title -->
+                <h2>
+                    Calcola il prezzo del tuo biglietto
+                </h2>
+
+                <!-- Box Form -->
+                <div class="box">   
+                    <div class="user-form">
+                        <!-- Content Form -->
+                        <div class="user-form-content">
+                            <div class="form-item">
+                                <label for="user-name">Nome e cognome</label>
+                                <input type="text" id="user-name">
+                            </div>
+            
+                            <div class="form-item">
+                                <label for="user-km">Km da percorrere</label>
+                                <input type="number" id="user-km">
+                            </div>
+            
+                            <div class="form-item">
+                                <label for="user-age">Fascia di età</label>
+                                <select id="user-age">
+                                    <option value="maggiorenne">Maggiorenne</option>
+                                    <option value="minorenne">Minorenne</option>
+                                    <option value="over">Over 65</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- Button Form -->
+                        <div class="form-item">
+                            <button id="generate-ticket">Genera</button>
+        
+                            <button id="cancel-ticket">Annulla</button>
+                        </div>
+                        
+                    </div>    
+                </div>
+                <!-- END Box Form -->
+            </div>
+            <!-- END GENERATORE DEL TICKET -->
+
+            <!-- TICKET -->
+            <div class="am-row" id="ticket">
+                <!-- Title -->
+                <h2>
+                    Il tuo biglietto
+                </h2>
+                
+                <!-- Box Ticket -->
+                <div class="box box-ticket"> 
+                    <!-- Title Box-->
+                    <h3>
+                        Dettaglio passeggeri
+                    </h3>
+
+                    <!-- Content Ticket -->
+                    <div class="ticket-container">
+            
+                        <!-- Dati utente -->
+                        <div class='ticket-card passenger' id="ticket-name">  
+                            <h4>
+                                NOME PASSEGGERO
+                            </h4>
+            
+                            <div class="" id="username"></div>
+                        </div>
+                        
+                        <!-- Offerta -->
+                        <div class='ticket-card' id="ticket-offer">
+                            <h4>
+                                Offerta
+                            </h4> 
+            
+                            <div id="user-offer"></div>
+                        </div>
+            
+                        <!-- Numero Carrozza -->
+                        <div class='ticket-card' id="ticket-carriage">
+                            <h4>
+                                Carrozza
+                            </h4> 
+            
+                            <div id="user-carriage"></div>
+                        </div>
+            
+                        <!-- Codice Random -->
+                        <div class='ticket-card' id="ticket-code">
+                            <h4>
+                                Codice CP
+                            </h4> 
+            
+                            <div id="user-code"></div>
+                        </div>
+            
+                        <!-- Prezzo finale -->
+                        <div class='ticket-card' id="ticket-price">
+                            <h4>
+                                Costo Biglietto
+                            </h4> 
+            
+                            <div id="final-price"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Box Ticket -->     
+            </div>
+            <!-- END TICKET -->
+        </section>
+    </main>
+
+    <script type="text/javascript" src="js/script.js"></script>   
+</body>
+</html>
